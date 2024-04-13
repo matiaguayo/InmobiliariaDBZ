@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="css/styleformulario.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+</head>
+
+<body>
+    <div id="cont_formulario">
+        <form>
+            <h4>Formulario Registro Propietario</h4>
+            
+            <input class="separacion" type="text" id="nombreusuario" name="nombreusuario" placeholder="Ingrese su Nombre" required>
+            <input class="separacion" type="text" id="lastusuario" name="lastusuario" placeholder="Ingrese su Apellido" required>
+            <input class="separacion" type="text" id="rut" name="rut" placeholder="Ingrese su Rut" required>
+            <input class="separacion" type="date" id="fnacimiento" name="fnacimiento" style="cursor: pointer" placeholder="Fecha de Nacimiento" required> <br>
+            <input class="separacion" type="email" name="email" id="email" placeholder="Ingrese su Email" required>
+            <input class="separacion" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña" required>
+            <input class="separacion" type="password" name="clave2" id="clave2" placeholder="Repetir Contraseña">
+                <select name="prov" class="separacion" style="cursor: pointer" required>
+                    <option value="0">Sexo</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select> <br>
+                <input class="separacion" type="number" id="numtelefono" name="numtelefono" placeholder="Ingrese su Numero" required> <br>
+                <label for="lname">Fotos de la Propiedad:</label> <br>
+                <input style="text-decoration: underline;" type="file" name="file" id="file" required> <br> <br>
+                <input type="submit" value="Registrarse" id="registrar">
+                <input type="button" value="Regresar" id="regresar" onclick="history.back()">
+                <p><a href="#" style="color: rgb(255, 255, 255);">¿Ya tengo Cuenta?</a></p>
+        </form>
+        
+    </div>
+
+
+</body>
+</html>

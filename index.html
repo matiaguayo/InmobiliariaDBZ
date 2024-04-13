@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria DBZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/Bootstrap.style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/house_2552765.png" width="60px" alt="">
+        </div>
+        <div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="Formulario.html">Registrarse Como Vendedor</a></li>
+                    <li><a href="FormularioP.html">Registrarse Como Propiertario</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <section id="banner"></section>
+    <section id="filtros">
+        <div class="container-filtros">
+            <h2 class="eslogan">Casas, Departamentos. <br>
+            Al mejor precio</h2>
+            <label for="provi">Seleccionar Provincia:</label>
+            <select name="provi" id="provi">
+                <option value="0" selected> Seleccionar</option>
+                <option value="1">Elquí</option>
+                <option value="2">Limarí</option>
+                <option value="3">Choapa</option>
+            </select>
+            <label for="comu"> Selecciona Comuna:</label>
+            <select name="Comuna" id="comu">
+                <option value="0" selected>Seleccionar</option>
+                <option value="1">Coquimbo</option>
+                <option value="2">La Serena</option>
+                <option value="3">Ovalle</option>
+            </select>
+            <label for="sector"> Seleccione Sector:</label>
+            <select name="sector" id="sector">
+                <option value="0" selected>Seleccionar</option>
+                <option value="1">El milagro</option>
+                <option value="2">Peñuelas</option>
+                <option value="3">Herradura</option>
+            </select> <br>
+            <button class="btn">Buscar</button>
+        </div>
+    </section>
+    <section id="muestra"></section>
+    <footer>
+        Todos los derechos reservados IDBZ.CL - 2024
+    </footer>
+    
+</body>
+
+<script src="js/bootstrap.js"></script>
+</html>

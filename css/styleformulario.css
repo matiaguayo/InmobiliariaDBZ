@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg') no-repeat center center/cover;
+}
+
+#cont_formulario {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* #cont_formulario {
+    margin: 100px auto;
+    padding: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 500px;
+    
+    
+
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 2px solid #010101;
+    
+    
+} */
+
+/* La sepracion */
+
+.separacion {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+
+/* .separacion {
+    padding: auto;
+    border-radius: 2px solid;
+} */
+
+
+#registrar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#registrar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#regresar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#regresar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+    
+
+
+

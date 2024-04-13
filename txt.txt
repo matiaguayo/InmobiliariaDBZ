@@ -1,0 +1,35 @@
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown </button>
+        <ul class="dropdown-menu" >
+            <li><button class="dropdown-item"  type="button">Dropdown item</button></li>
+            <li><button class="dropdown-item"  type="button">Dropdown item</button></li>
+            <li><button class="dropdown-item"  type="button">Dropdown item</button></li>
+        </ul>
+</div>
+
+
+#Cambios en el formulario
+
+#quite
+<label for="lname">Nombre Usuario</label>
+<label for=" lname"> Ingrese Email:</label> <br>
+<label for="lname">Ingrese Fecha de Nacimiento:</label> <br>
+<label for="lname"> Ingrese Contraseña:</label> <br>
+<label for="lname"> Seleccione Sexo:</label> <br>
+<label for="lname">Ingrese Telefono Movil:</label> <br>
+
+id="prov"
+
+#prov {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+}
+
+#prov:hover {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #eceff1;
+    font-size: 14px;
+}
+
+nav {
+
+    background-color: rgba(147, 179, 202, .784);
+    position: top;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    transition: all .3s;
+    right: 0;
+    left: 0;   
+    font-size: medium;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 20px 0;
+    padding: 10px;
+    color: black;
+    display: inline-block;
+    border: 1px solid;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.nav-menu a:hover {
+    color: rgb(41, 120, 184);
+    transition: all .3s;
+    background-color: rgba(147, 179, 202, .5);
+}
+
+.eslogan {
+    color: #000;
+    display: flex;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.container-filtros {
+    font-size: medium;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    justify-content: center;
+    border: 2px solid;
+    
+}
+
+#logo {
+    float: left;
+    padding: 0;
+    width: 0;
+    justify-content: flex;
+}
+
+section {
+    padding: 100px;
+    border: 3px solid;
+
+}
+
+footer {
+    background-color: rgba(147, 179, 202, .5);
+    color: #000000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#banner {
+    background: url(/img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg) no-repeat center center/cover;
+    height: 400px;
+}
+
+.btn {
+    cursor: pointer;
+    transition: all .3s;
+    border: 1px solid #000;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    
+}
+
+.btn:hover {
+    background-color: azure;
+    color: #000000;
+}
+
+
+
+
