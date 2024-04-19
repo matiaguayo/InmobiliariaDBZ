@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-image: url(../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg) no-repeat center center/cover;
+    background-image: url('../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg') no-repeat center center/cover;
     align-items: center;
     justify-content: flex-end;
     background-attachment: fixed;
