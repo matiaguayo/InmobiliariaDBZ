@@ -1,6 +1,18 @@
-body{
-    background-image: url("../img/fondo.jpg");
-    
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    align-items: center;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    margin: 100px 0;
+    background: url(../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+
 }
 .card-header {
     font-size: 30px;
