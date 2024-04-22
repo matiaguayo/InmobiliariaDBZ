@@ -1,87 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
-    background: url(/img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg) no-repeat center center/cover;
-    align-items: center;
-    justify-content: flex-end;
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
-    margin: 100px 0;
-
+body{
+    background-image: url("../img/fondo.jpg");
+    
 }
-
-
-
-.textfont {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #000000;
+.card-header {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
 }
 
 #contenedor-login {
-    background-color: #8c6c6c6e;
-    width: 500px;
-    height: 250px;
     margin: auto;
-    border: 2px solid #000;
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 600px;
+    font-size: 21px;
 }
 
-#cabecera {
-    font-size: 25px;
-    text-align: center;
-    padding: 10px; 
-    font-weight: bold;
-}
-
-
-
-.logo {
-    padding: 10px;
-    width: 150px;
-    float: left;
-}
-
-#formulario {
-    padding: 10px;
-    float: left;
-    width: 306px;
-    height: 154px;
+.text {
     text-align: center;
 }
 
-#pie {
-    font-size: 11px;
-    text-align: center;
-    padding: 10px;
-    float: left;
-    width: 480px;
+
+.ingresar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px auto;
 }
 
-
-.btn {
+.ingresar:hover {
+    text-decoration: underline;
     cursor: pointer;
-    border: 0;
-    padding: 10px 25px;
-    background: #8e7ea5;
-    color: aliceblue;
-    font-size: 15px;
-    border: 1px solid #fff;
-    border-radius: 10px;
 }
 
-.btn:hover {
-    opacity: .7;
-    background-color: burlywood;
-    color: #000;
-    transition-duration: 0.10ms;
+.regresar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
 }
+
+.regresar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
 

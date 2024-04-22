@@ -1,0 +1,432 @@
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown </button>
+        <ul class="dropdown-menu" >
+            <li><button class="dropdown-item"  type="button">Dropdown item</button></li>
+            <li><button class="dropdown-item"  type="button">Dropdown item</button></li>
+            <li><button class="dropdown-item"  type="button">Dropdown item</button></li>
+        </ul>
+</div>
+
+
+#Cambios en el formulario
+
+#quite
+<label for="lname">Nombre Usuario</label>
+<label for=" lname"> Ingrese Email:</label> <br>
+<label for="lname">Ingrese Fecha de Nacimiento:</label> <br>
+<label for="lname"> Ingrese Contraseña:</label> <br>
+<label for="lname"> Seleccione Sexo:</label> <br>
+<label for="lname">Ingrese Telefono Movil:</label> <br>
+
+id="prov"
+
+#prov {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+}
+
+#prov:hover {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#LOGIN ANTIGUO
+
+<div id="cabecera">
+            Inmoviliaria Dragon Ball Z 
+        </div>
+        <div id="logo"><img src="img/house_2552765.png" width="150px">
+        </div>
+        <div id="formulario">
+            <form>
+                <label for="fusuario">Usuario:</label><br>
+                <input type="text" id="fusuario" name="fusuario" placeholder="Usuario" required><br>
+                <label for="lname">Password:</label><br>
+                <input type="password" id="fclave" name="fclave" placeholder="Contraseña" required><br><br>
+                <input type="submit" value="Ingresar" class="btn">
+                <input type="button" value="Regresar" class="btn" onclick="history.back()" >
+            </form>
+
+
+            
+        <div id="pie">
+            Todos los derechos reservados - DBZ Ltda.- 2024
+        </div>
+        </div>
+
+
+#LOGIN ESTILO ANTIGUO
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: url(/img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg) no-repeat center center/cover;
+    align-items: center;
+    justify-content: flex-end;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    margin: 100px 0;
+
+}
+
+
+
+.textfont {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #000000;
+}
+
+#contenedor-login {
+    background-color: #8c6c6c6e;
+    width: 500px;
+    margin: auto;
+    border: 2px solid #000;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#cabecera {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px; 
+    font-weight: bold;
+}
+
+
+
+.logo {
+    padding: 10px;
+    width: 150px;
+    float: left;
+}
+
+#formulario {
+    padding: 10px;
+    float: left;
+    width: 306px;
+    height: 154px;
+    text-align: center;
+}
+
+#pie {
+    font-size: 11px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    width: 480px;
+}
+
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    padding: 10px 25px;
+    background: #8e7ea5;
+    color: aliceblue;
+    font-size: 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: .7;
+    background-color: burlywood;
+    color: #000;
+    transition-duration: 0.10ms;
+}
+
+<body class="bg-dark">
+
+#registrar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#registrar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#regresar {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#regresar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#DASHBOARD PERSONALIZADO
+
+                    <class="row">
+                        <div class="col-sm-4">
+                        <?php
+                        if ($_SESSION['tipo']!=1)
+                        {
+                            ?>
+                            <div class="caja">
+                                <img src="img/Icons/perfil.png"> <br>
+                                <h6>Editar Perfil</h6>
+                            </div>
+                            
+                            <?php
+                            }else {
+                            ?>
+                            <div class="caja">
+                                <img src="img/Icons/user.png"> <br>
+                                <h6>Admin. Usuarios</h6>
+                            </div>
+                            
+                        <?php
+                        }
+                        ?>
+                        </div>
+                        <div class="col-sm-4">
+                        <?php
+                        if ($_SESSION['tipo']!=1)
+                        {
+                            ?>
+                            <div class="caja">
+                                <img src="img/Icons/propietario.png"> <br>
+                                <h6>Admin. Propietarios</h6>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <div class="caja">
+                            <img src="img/Icons/casa.png"> <br>
+                                <h6>Admin. Propiedades</h6>
+                            </div>
+                        
+                        
+                            <div class="caja">
+                            <img src="img/Icons/vendedor.png"> <br>
+                                <h6>Admin. Vendedores</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
+<?php
+}else {
+    header("Location:error.html");
+}
+?>
+
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria DBZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/Bootstrap.style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/house_2552765.png" width="60px" alt="">
+        </div>
+        <div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="Formulario.html">Registrarse Como Vendedor</a></li>
+                    <li><a href="FormularioP.html">Registrarse Como Propiertario</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <section id="banner"></section>
+    <section id="filtros">
+        <div class="container-filtros">
+            
+            <label for="provi">Seleccionar Provincia:</label>
+            <select name="provi" id="provi">
+                <option value="0" selected> Seleccionar</option>
+                <option value="1">Elquí</option>
+                <option value="2">Limarí</option>
+                <option value="3">Choapa</option>
+            </select>
+            <label for="comu"> Selecciona Comuna:</label>
+            <select name="Comuna" id="comu">
+                <option value="0" selected>Seleccionar</option>
+                <option value="1">Coquimbo</option>
+                <option value="2">La Serena</option>
+                <option value="3">Ovalle</option>
+            </select>
+            <label for="sector"> Seleccione Sector:</label>
+            <select name="sector" id="sector">
+                <option value="0" selected>Seleccionar</option>
+                <option value="1">El milagro</option>
+                <option value="2">Peñuelas</option>
+                <option value="3">Herradura</option>
+            </select> <br>
+            <button class="btn">Buscar</button>
+        </div>
+    </section>
+    <section id="muestra"></section>
+    <footer>
+        Todos los derechos reservados IDBZ.CL - 2024
+    </footer>
+    
+</body>
+
+<script src="js/bootstrap.js"></script>
+</html>
+
+
+
+  <!--/ News Star /-->
+  <section class="section-news section-t8">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-wrap d-flex justify-content-between">
+            <div class="title-box">
+              <h2 class="title-a">Latest News</h2>
+            </div>
+            <div class="title-link">
+              <a href="blog-grid.html">All News
+                <span class="ion-ios-arrow-forward"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="new-carousel" class="owl-carousel owl-theme">
+        <div class="carousel-item-c">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box-b">
+              <img src="img/post-2.jpg" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a href="#" class="category-b">House</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">House is comming
+                      <br> new</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">18 Sep. 2017</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-c">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box-b">
+              <img src="img/post-5.jpg" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a href="#" class="category-b">Travel</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Travel is comming
+                      <br> new</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">18 Sep. 2017</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-c">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box-b">
+              <img src="img/post-7.jpg" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a href="#" class="category-b">Park</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="blog-single.html">Park is comming
+                      <br> new</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">18 Sep. 2017</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item-c">
+          <div class="card-box-b card-shadow news-box">
+            <div class="img-box-b">
+              <img src="img/post-3.jpg" alt="" class="img-b img-fluid">
+            </div>
+            <div class="card-overlay">
+              <div class="card-header-b">
+                <div class="card-category-b">
+                  <a href="#" class="category-b">Travel</a>
+                </div>
+                <div class="card-title-b">
+                  <h2 class="title-2">
+                    <a href="#">Travel is comming
+                      <br> new</a>
+                  </h2>
+                </div>
+                <div class="card-date">
+                  <span class="date-b">18 Sep. 2017</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ News End /-->
+
+
+  

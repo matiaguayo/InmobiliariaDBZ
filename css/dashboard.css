@@ -1,0 +1,89 @@
+/* DASHBOARD.PHP */
+
+.sesion {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+    font-size: 21px;
+    text-align: center;
+    
+}
+
+.cerrarsesion {
+    text-decoration: none;
+    color: darkblue;
+    cursor: pointer;
+}
+
+.cerrarsesion:hover {
+    text-decoration: underline;
+
+}
+
+.menu {
+    width: 800px;
+    margin: auto;
+    padding: auto;
+    /* background-color: rgb(32, 163, 163); */
+}
+
+.caja {
+    width: 117px;
+    height: 150px;
+    margin: auto;
+    border: 1px solid slategray;
+    text-align: center;
+    background-color: #F0F8FF;
+
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border: 2px solid #9199a3;
+
+    margin: auto;
+    padding-top: 20px;
+
+}
+
+.separar {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    
+}
+
+.tamaño {
+    width: 100%;
+    padding: 30px;
+    margin: 10px; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+    
+}
+
+.frm {
+    width: 80%;
+    padding: auto;
+    margin: auto; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.textaling {
+    text-align: center;
+}
+
+.space {
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(32, 163, 163);
+    font-family: 'calibri';
+    font-size: 18px; 
+}
