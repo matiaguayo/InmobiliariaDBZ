@@ -5,8 +5,55 @@
 }
 
 body {
-    background: url('/img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg') no-repeat center center/cover;
+    background: url(../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
+/* .efecto-glass {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,.4);
+} */
+
+/* .formulario {
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+} */
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* .separacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,.4);
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+} */
+
+
+::placeholder {
+    color: #ddd;
+    
+}
+
 
 #cont_formulario {
     width: 400px;
@@ -17,31 +64,9 @@ body {
     border-radius: 4px;
     color: white;
     box-shadow: 7px 13px 37px #000;
-}
+    backdrop-filter: blur(5px);
+}  
 
-h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-
-/* #cont_formulario {
-    margin: 100px auto;
-    padding: 40px;
-    font-weight: bold;
-    text-align: center;
-    width: 500px;
-    
-    
-
-
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border: 2px solid #010101;
-    
-    
-} */
 
 /* La sepracion */
 
@@ -56,12 +81,6 @@ h4 {
     font-size: 18px;
     color: white;
 }
-
-
-/* .separacion {
-    padding: auto;
-    border-radius: 2px solid;
-} */
 
 
 #registrar {
@@ -91,11 +110,10 @@ h4 {
 
 #regresar:hover {
     text-decoration: underline;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 
-    
 
 
 

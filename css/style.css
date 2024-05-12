@@ -76,7 +76,7 @@ a:hover {
 }
 
 .text-brand {
-  color: #000000;
+  color: #005e8a;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .color-b {
-  color: #ffaf02;
+  color: rgb(1232, 78, 17);
 }
 
 .color-d {
@@ -120,7 +120,7 @@ a:hover {
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: #ffaf02;
+  background-color: rgb(1232, 78, 17);
   z-index: 2;
 }
 
@@ -172,7 +172,7 @@ a:hover {
 .pagination-a .pagination .page-link:hover,
 .pagination-a .pagination .page-link:active,
 .pagination-a .pagination .page-link:focus {
-  background-color: #2ec;
+  background-color: rgb(1232, 78, 17);
 }
 
 .pagination-a .pagination .page-link span {
@@ -199,11 +199,11 @@ a:hover {
 }
 
 .pagination-a .pagination .page-item.active .page-link {
-  background-color: #ffaf02;
+  background-color: rgb(1232, 78, 17);
 }
 
 .a {
-  color: #ffaf02;
+  color: rgb(1232, 78, 17);
   font-size: 1.3rem;
 }
 
@@ -287,7 +287,7 @@ a:hover {
   position: absolute;
   width: 70px;
   height: 4px;
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
   bottom: 20px;
   left: 0;
 }
@@ -354,11 +354,11 @@ a:hover {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #ffaf02;
+  background-color: rgb(1232, 78, 17);
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
   width: 35px;
 }
 
@@ -408,7 +408,7 @@ a:hover {
   display: inline-block;
   transition: all 0.6s ease-in-out;
   color: #ffffff;
-  background-color: #ffaf02;
+  background-color: rgb(1232, 78, 17);
   opacity: .9;
 }
 
@@ -420,7 +420,7 @@ a:hover {
 
 .nav-arrow-b .owl-arrow .owl-nav .owl-prev:hover,
 .nav-arrow-b .owl-arrow .owl-nav .owl-next:hover {
-  background-color: #ffaf02;
+  background-color: rgb(1232, 78, 17);
 }
 
 .nav-arrow-b .owl-arrow .owl-nav .owl-next {
@@ -438,7 +438,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #ffaf02;
+  background: rgb(1232, 78, 17);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -476,7 +476,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #ffaf02;
+  border-top: 6px solid rgb(1232, 78, 17);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -566,7 +566,7 @@ a:hover {
   width: 100%;
   height: 2px;
   z-index: 0;
-  background-color: #ff7700;
+  background-color: rgb(1232, 78, 17)0;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -602,7 +602,7 @@ a:hover {
 }
 
 .navbar-default.navbar-trans .nav-link:before {
-  background-color: #ff7700;
+  background-color: rgb(1232, 78, 17);
 }
 
 .navbar-default.navbar-trans .nav-link:hover {
@@ -627,7 +627,7 @@ a:hover {
 }
 
 .navbar-default.navbar-reduce .nav-link:before {
-  background-color: #ff7700;
+  background-color: rgb(1232, 78, 17);
 }
 
 .navbar-default.navbar-reduce .nav-link:hover {
@@ -647,7 +647,7 @@ a:hover {
 
 .navbar-default .dropdown .dropdown-menu {
   border-top: 0;
-  border-left: 4px solid #ff7700;
+  border-left: 4px solid rgb(1232, 78, 17);
   border-right: 0;
   border-bottom: 0;
   -webkit-transform: translate3d(0px, -40px, 0px);
@@ -670,13 +670,13 @@ a:hover {
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #ffffff;
-  color: #ff7700;
+  color: rgb(1232, 78, 17);
   transition: all 500ms ease;
 }
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item.active {
   background-color: #ffffff;
-  color: #ff7700;
+  color: rgb(1232, 78, 17);
 }
 
 .navbar-default .dropdown:hover .dropdown-menu {
@@ -872,11 +872,11 @@ a:hover {
 }
 
 .intro .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #ff7700;
+  background-color: rgb(1232, 78, 17);
 }
 
 .intro .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
 }
 
 .intro .intro-item {
@@ -903,7 +903,7 @@ a:hover {
 .intro .intro-body .price-a {
   color: #ffffff;
   padding: 1rem 1.5rem;
-  border: 2px solid #2eca6a;
+  border: 2px solid rgb(1232, 78, 17);
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.030em;
@@ -953,7 +953,7 @@ a:hover {
 }
 
 .intro-single .title-single-box {
-  border-left: 3px solid #2eca6a;
+  border-left: 3px solid rgb(1232, 78, 17);
 }
 
 .intro-single .title-single-box .title-single {
@@ -1055,7 +1055,7 @@ a:hover {
 .price-a {
   color: #ffffff;
   padding: .6rem .8rem;
-  border: 2px solid #ff7700;
+  border: 2px solid rgb(1232, 78, 17);
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.030em;
@@ -1065,7 +1065,7 @@ a:hover {
   width: 100%;
   position: absolute;
   z-index: 2;
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
 }
 
 .card-info {
@@ -1213,7 +1213,7 @@ a:hover {
 
 .testimonial-ico span {
   font-size: 1.8rem;
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
   color: #ffffff;
   padding: .4rem 1rem;
   border-radius: 50px;
@@ -1259,7 +1259,7 @@ a:hover {
 
 .section-footer {
   padding-top: 60px;
-  margin-top: 60px;
+  margin-top: 0px;
   background: #f3f3f3;
 }
 
@@ -1270,7 +1270,7 @@ a:hover {
 .section-footer .item-list-a i {
   font-size: 18px;
   padding-right: 4px;
-  color: #2eca6a;
+  color: rgb(1232, 78, 17);
 }
 
 .section-footer .widget-a .w-title-a {
@@ -1297,8 +1297,8 @@ footer .credits {
 ======================================*/
 
 .form-a #sendmessage {
-  color: #2eca6a;
-  border: 1px solid #26a356;
+  color: rgb(1232, 78, 17);
+  border: 1px solid rgb(1232, 78, 17);
   display: none;
   text-align: center;
   padding: 15px;
@@ -1351,7 +1351,7 @@ footer .credits {
 
 .form-a .form-control:focus {
   box-shadow: none;
-  border-color: #2eca6a;
+  border-color: rgb(1232, 78, 17);
 }
 
 /*======================================
@@ -1375,12 +1375,12 @@ footer .credits {
 }
 
 .btn.btn-a:hover {
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
   color: #000000;
 }
 
 .btn.btn-b {
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
   color: #000000;
 }
 
@@ -1390,13 +1390,13 @@ footer .credits {
 }
 
 .btn.btn-b-n {
-  background-color: #2eca6a;
+  background-color: rgb(1232, 78, 17);
   color: #ffffff;
   border-radius: 0;
 }
 
 .btn.btn-b-n:hover {
-  background-color: #26a356;
+  background-color: rgb(1232, 78, 17);
   color: #ffffff;
 }
 
@@ -1446,7 +1446,7 @@ footer .credits {
   }
 
   .navbar-default .dropdown .dropdown-menu {
-    border-top: 4px solid #2eca6a;
+    border-top: 4px solid rgb(1232, 78, 17);
     border-left: 0;
     display: block;
     position: absolute;
