@@ -76,7 +76,11 @@ a:hover {
 }
 
 .text-brand {
+<<<<<<< HEAD
   color: #005e8a;
+=======
+  color: #005c9e;
+>>>>>>> 726eef9e9609d265c7ff6acbb35c1fee77ea6dd5
   font-size: 2rem;
   font-weight: 600;
 }
