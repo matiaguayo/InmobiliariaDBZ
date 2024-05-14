@@ -19,11 +19,10 @@ if (isset($_SESSION['usu'])) {
             break;
     }
 
-    if(isset($_GET['id']))
-    {
-        $sql_usu="select * from usuarios where id=".$_GET['id'];
-        $result_usu=mysqli_query(conectar(), $sql_usu);
-        $datos_usu=mysqli_fetch_array($result_usu);
+    if (isset($_GET['id'])) {
+        $sql_usu = "select * from usuarios where id=" . $_GET['id'];
+        $result_usu = mysqli_query(conectar(), $sql_usu);
+        $datos_usu = mysqli_fetch_array($result_usu);
     }
 
 
@@ -60,7 +59,7 @@ if (isset($_SESSION['usu'])) {
                         Cerrar Sesión</a></div>
             </div>
         </div>
-        <br> 
+        <br>
         <br>
         <div class="menu frm">
             <div class="card">
@@ -72,30 +71,42 @@ if (isset($_SESSION['usu'])) {
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control space" id="frm_name" name="frm_name" placeholder="Nombre" 
-                                    value="<?php if (isset($_GET['id'])){ echo $datos_usu['nombre'];} ?>">
-                                    <input type="text" class="form-control space" id="frm_apellido" name="frm_apellido" placeholder="Apellido" value="<?php if (isset($_GET['id'])){ echo $datos_usu['apellido'];} ?>">
-                                    <input type="text" class="form-control space" id="frm_rut" name="frm_rut" placeholder="Rut"
-                                    value="<?php if (isset($_GET['id'])){ echo $datos_usu['rut'];} ?>">
-                                    <?php if (!isset($_GET['id'])){?>
-                                    <input type="password" class="form-control space" id="frm_clave" name="frm_clave" placeholder="Clave">
-                                    <?php }?>
+                                    <input type="text" class="form-control space" id="frm_name" name="frm_name" placeholder="Nombre" value="<?php if (isset($_GET['id'])) {
+                                                                                                                                                echo $datos_usu['nombre'];
+                                                                                                                                            } ?>">
+                                    <input type="text" class="form-control space" id="frm_apellido" name="frm_apellido" placeholder="Apellido" value="<?php if (isset($_GET['id'])) {
+                                                                                                                                                            echo $datos_usu['apellido'];
+                                                                                                                                                        } ?>">
+                                    <input type="text" class="form-control space" id="frm_rut" name="frm_rut" placeholder="Rut" value="<?php if (isset($_GET['id'])) {
+                                                                                                                                            echo $datos_usu['rut'];
+                                                                                                                                        } ?>">
+                                    <?php if (!isset($_GET['id'])) { ?>
+                                        <input type="password" class="form-control space" id="frm_clave" name="frm_clave" placeholder="Clave">
+                                    <?php } ?>
                                     <span class="form-label">Estado:</span>
                                     <select class="form-control form-control-lg form-control-a space" name="frm_estado" id="estado">
                                         <option value="0" selected> Seleccionar</option>
-                                        <option value="1" <?php if (isset($_GET['id'])){ if($datos_usu['estado']==1) {?> selected <?php }}?>>Activo</option>
-                                        <option value="2" <?php if (isset($_GET['id'])){ if($datos_usu['estado']==0) {?> selected <?php }}?>>Inactivo</option>
+                                        <option value="1" <?php if (isset($_GET['id'])) {
+                                                                if ($datos_usu['estado'] == 1) { ?> selected <?php }
+                                                                                                                            } ?>>Activo</option>
+                                        <option value="2" <?php if (isset($_GET['id'])) {
+                                                                if ($datos_usu['estado'] == 0) { ?> selected <?php }
+                                                                                                                            } ?>>Inactivo</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="date" class="form-control space" id="frm_fecha" name="frm_fecha" placeholder="Fecha Nacimiento" value="<?php if (isset($_GET['id'])){ echo $datos_usu['fechaNacimiento'];} ?>">
-                                    <input type="text" class="form-control space" id="frm_sexo" name="frm_sexo" placeholder="Sexo" 
-                                    value="<?php if (isset($_GET['id'])){ echo $datos_usu['sexo'];} ?>">
-                                    <input type="email" class="form-control space" id="frm_email" name="frm_email" placeholder="Email" 
-                                    value="<?php if (isset($_GET['id'])){ echo $datos_usu['mailUsuario'];} ?>">
-                                    <?php if (!isset($_GET['id'])){?>
-                                    <input type="password" class="form-control space" id="frm_re_clave" name="frm_re_clave" placeholder="Repetir Clave">
-                                    <?php }?>
+                                    <input type="date" class="form-control space" id="frm_fecha" name="frm_fecha" placeholder="Fecha Nacimiento" value="<?php if (isset($_GET['id'])) {
+                                                                                                                                                            echo $datos_usu['fechaNacimiento'];
+                                                                                                                                                        } ?>">
+                                    <input type="text" class="form-control space" id="frm_sexo" name="frm_sexo" placeholder="Sexo" value="<?php if (isset($_GET['id'])) {
+                                                                                                                                                echo $datos_usu['sexo'];
+                                                                                                                                            } ?>">
+                                    <input type="email" class="form-control space" id="frm_email" name="frm_email" placeholder="Email" value="<?php if (isset($_GET['id'])) {
+                                                                                                                                                    echo $datos_usu['mailUsuario'];
+                                                                                                                                                } ?>">
+                                    <?php if (!isset($_GET['id'])) { ?>
+                                        <input type="password" class="form-control space" id="frm_re_clave" name="frm_re_clave" placeholder="Repetir Clave">
+                                    <?php } ?>
                                     <span class="form-label">Tipo de Usuario:</span>
                                     <select class="form-control form-control-lg form-control-a space" name="frm_id_tipo" id="tdusuario">
                                         <option value="0" selected> Seleccionar</option>
@@ -105,7 +116,9 @@ if (isset($_SESSION['usu'])) {
                                         $result = mysqli_query(conectar(), $sql);
                                         while ($datos = mysqli_fetch_array($result)) {
                                         ?>
-                                            <option value="<?php echo $datos['id_tipo']; ?>" <?php if (isset($_GET['id'])){ if($datos_usu['id_tipo']==$datos['id_tipo']) {?> selected <?php }}?>><?php echo $datos['tipo']; ?></option>
+                                            <option value="<?php echo $datos['id_tipo']; ?>" <?php if (isset($_GET['id'])) {
+                                                                                                    if ($datos_usu['id_tipo'] == $datos['id_tipo']) { ?> selected <?php }
+                                                                                                                                                                                } ?>><?php echo $datos['tipo']; ?></option>
                                         <?php
                                         }
                                         ?>
@@ -117,8 +130,7 @@ if (isset($_SESSION['usu'])) {
                                 <?php
 
 
-                                if (!isset($_GET['id'])) 
-                                {
+                                if (!isset($_GET['id'])) {
                                 ?>
                                     <input type="button" value="Ingresar" onclick="validar(this.value);" class="btn btn-primary boton">
                                 <?php
@@ -134,7 +146,9 @@ if (isset($_SESSION['usu'])) {
                                 ?>
                                 <input type="button" value="Cancelar" onclick="validar(this.value);" class="btn btn-secondary boton">
                                 <input type="hidden" name="accion">
-                                <input type="hidden" name="idoculto" value="<?php if(isset($_GET['id'])){ echo $_GET['id'];}?>">
+                                <input type="hidden" name="idoculto" value="<?php if (isset($_GET['id'])) {
+                                                                                echo $_GET['id'];
+                                                                            } ?>">
 
                             </div>
 
@@ -167,7 +181,7 @@ if (isset($_SESSION['usu'])) {
                         </thead>
                         <?php
                         // TRAEMOS LOS CAMPOS DE LA BASE DE DATOS  
-                        $sql = "select * from usuarios";
+                        $sql = "select * from usuarios where id_tipo=2";
                         $result = mysqli_query(conectar(), $sql);
                         $con = mysqli_num_rows($result);
 
@@ -209,18 +223,17 @@ if (isset($_SESSION['usu'])) {
                                     </td>
                                     <td>
                                         <?php
-                                        if($_SESSION['tipo']!=$datos['id_tipo'])
-                                        {
-                                            ?>
-                                        <a href="frm_usuarios.php?id=<?php echo $datos['id']; ?>"><img src="img/icons/reload.png" alt="" width="25px"></a> &nbsp; &nbsp; <?php if ($datos['estado'] == 1) { ?>| &nbsp; &nbsp;
-
-                                        <!-- Mandamos datos por href -->
-                                        <a href="crud_usuarios.php?id=<?php echo $datos['id'];?>&estado=<?php echo $datos['estado'];?>">
-                                            <img src="img/icons/eliminar.png" alt="" width="25px">
-                                        </a><?php } ?>
-                                        <?php
-                                        }
+                                        if ($_SESSION['tipo'] != $datos['id_tipo']) {
                                         ?>
+                                            <a href="frm_usuarios.php?id=<?php echo $datos['id']; ?>"><img src="img/icons/reload.png" alt="" width="25px"></a> &nbsp; &nbsp; <?php if ($datos['estado'] == 1) { ?>| &nbsp; &nbsp;
+
+                                            <!-- Mandamos datos por href -->
+                                            <a href="crud_usuarios.php?id=<?php echo $datos['id']; ?>&estado=<?php echo $datos['estado']; ?>">
+                                                <img src="img/icons/eliminar.png" alt="" width="25px">
+                                            </a><?php } ?>
+                                    <?php
+                                        }
+                                    ?>
                                     </td>
 
                                 </tr>
@@ -235,7 +248,12 @@ if (isset($_SESSION['usu'])) {
             </div>
         </div>
         </div>
-        <div class="card-footer"><h4> Total de Propietarios (<?php echo $con; ?>)</h4> <hr> <a class="cerrarsesion" href="exportarExcel.php"><h4> Exportar a Excel <img src="img/icons/excel_888900 (1).png" alt="" width="25px"></h4></a></div>
+        <div class="card-footer">
+            <h4> Total de Propietarios (<?php echo $con; ?>)</h4>
+            <hr> <a class="cerrarsesion" href="exportarExcel.php">
+                <h4> Exportar a Excel <img src="img/icons/excel_888900 (1).png" alt="" width="25px"></h4>
+            </a>
+        </div>
         </div>
         </div>
 

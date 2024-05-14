@@ -128,4 +128,27 @@ body {
 
 
 
+/* db.platos.insertOne(
+    {
+        codReceta: 1,
+        nombreReceta: "pavo al vapor",
+        valor: 23000,
+        timePreparation: "2 horas",
+        chef_especialistas:
+        [
+            {
+                rut_chef: 19862633-3,
+                nombreChef: "Matias Aguayo"
+            }
+        ],
+        ingredientes: [
+            {
+                nombreIngredientes: "Pavo",
+                gramajeRequerido: 3,
+                observaciónIngrediente: "requiere de mucho pavo"
+            }
+        ]
+        
 
+    }
+) */

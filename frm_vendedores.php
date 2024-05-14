@@ -166,7 +166,7 @@ if (isset($_SESSION['usu'])) {
                         </thead>
                         <?php
                         // TRAEMOS LOS CAMPOS DE LA BASE DE DATOS  
-                        $sql = "select * from usuarios";
+                        $sql = "select * from usuarios where id_tipo=3";
                         $result = mysqli_query(conectar(), $sql);
                         $con = mysqli_num_rows($result);
 
