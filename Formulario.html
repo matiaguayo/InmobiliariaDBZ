@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/styleformulario.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <script src="js/validardregistro.js" defer></script>
+    <title>formulario</title>
 </head>
-
 <body>
-    <div class="efecto-glass" id="cont_formulario">
-        <form action="#" class="formulario">
-            <h4>Formulario Registro Vendedor</h4>
-            
-            <input class="separacion" type="text" id="nombreusuario" name="nombreusuario" placeholder="Ingrese su Nombre" required>
-            
-        
-            <input class="separacion" type="text" id="lastusuario" name="lastusuario" placeholder="Ingrese su Apellido" required>
-            
-            
-            <input class="separacion" type="text" id="rut" name="rut" placeholder="Ingrese su Rut" required>
-            
-            <input class="separacion" type="date" id="fnacimiento" name="fnacimiento" style="cursor: pointer" placeholder="Fecha de Nacimiento" required> 
-            
-            <br>
-            
-            <input class="separacion" type="email" name="email" id="email" placeholder="Ingrese su Email" required>
-            
-            <input class="separacion" type="password" name="clave" id="clave" placeholder="Ingrese su Contraseña" required>
-            
-            
-            <input class="separacion" type="password" name="clave2" id="clave2" placeholder="Repetir Contraseña">
-            
-                <select name="prov" class="separacion" style="cursor: pointer" required>
-                    <option value="0">Sexo</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Femenino</option>
-                    <option value="3">Otro</option>
-                </select>
-            
-                <br>
-                
-                <input class="separacion" type="number" id="numtelefono" name="numtelefono" placeholder="Ingrese su Numero" required>
-                <br>
-                
-                <label for="lname">Certificado de Antecedentes:</label> <br>
-                <input style="text-decoration: underline;" type="file" name="file" id="file" required> <br>
-                
-                <input type="submit" value="Registrarse" id="registrar">
-                <input type="button" value="Regresar" id="regresar" onclick="history.back()">
-                <p><a href="#" style="color: rgb(255, 255, 255);">¿Ya tengo Cuenta?</a></p>
-        </form>
-        
+    <div class="container">
+    <form action="crud_registro.php" name="formregistro" id="formregistro" method="post">
+    <h1>Registro de Vendedor</h1>
+    <div class="input-group">
+    <label for="nombreusuario">Nombre</label>
+    <input type="text" id="nombreusuario" name="nombreusuario">
+    <div class="error"></div>  
     </div>
-
-
+    <div class="input-group">
+    <label for="apellidousuario">Apellido</label>
+    <input type="text" id="apellidousuario" name="apellidousuario">
+    <div class="error"></div>  
+    </div>
+    <div class="input-group">
+    <label for="rut">Rut</label>
+    <input type="text" id="rut" name="rut" placeholder="Sin puntos y con guión">
+    <div class="error"></div>  
+    </div>
+    <div class="input-group">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" >
+    <div class="error"></div>
+    </div>
+    <div class="input-group">
+    <label for="fnacimiento">Fecha de Nacimiento</label>
+    <input type="date" id="fnacimiento" name="fnacimiento">
+    <div class="error"></div>
+    </div>
+    <div class="input-group">
+    <label for="clave">Contraseña</label>
+    <input type="password" id="clave" name="clave">
+    <div class="error"></div>
+    </div>
+    <div class="input-group">
+    <label for="clave2">Confirmar Contraseña</label>
+    <input type="password" id="clave2" name="clave2">
+    <div class="error"></div>
+    </div>
+    <div class="input-group">
+    <label for="sexo">Sexo</label>
+    <select id="sexo" name="sexo" style="cursor: pointer;" >
+        <option value="0">Sexo</option>
+        <option value="1">Masculino</option>
+        <option value="2">Femenino</option>
+    </select>
+    <div class="error"></div>
+    </div>
+    <div class="input-group">
+    <label for="telefono">Número de Telefono</label>
+    <input type="number" id="telefono" name="telefono">
+    <div class="error"></div>
+    </div>
+    <label for="lname">Certificado de Antecedentes:</label> <br>
+    <input style="text-decoration: underline;" type="file" name="file" id="file"> 
+    <input type="hidden" name="valoroculto1" value="0">
+    <input type="hidden" name="valoroculto2" value="3">
+    <button type="submit">Registrarse</button>
+    <button type="button" value="Regresar" id="regresar" onclick="window.location.href='index.html'">Regresar</button>
+    <p><a href="login.html" style="color: rgba(0, 0, 0, 0.822);">¿Ya tienes cuenta? Ingresar</a></p>
+    </form>
+    </div>
 </body>
 </html>
+
