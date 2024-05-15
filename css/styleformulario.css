@@ -1,119 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    background: rgb(34,193,195);
+    background: url('../img/ToMjGpIYtgvMP38WTFC.webp') no-repeat center center/cover;
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
 }
 
-body {
-    background: url(../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+#formregistro{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
 }
 
-/* .efecto-glass {
-    position: relative;
-    width: 700px;
-    height: 600px;
-    background-color: rgba(0,0,0,.2);
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255,255,255,.4);
-} */
-
-/* .formulario {
-    position: absolute;
-    color: #fff;
-    padding: 10px;
-    width: 100%;
-} */
-
-h4 {
+h1{
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 22px;
+    color:#1f53c5;
 }
 
-/* .separacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid rgba(255,255,255,.4);
-    padding: 8px 10px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-} */
-
-
-::placeholder {
-    color: #ddd;
-    
-}
-
-
-#cont_formulario {
-    width: 400px;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 4px;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    backdrop-filter: blur(5px);
-}  
-
-
-/* La sepracion */
-
-.separacion {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
+#formregistro button{
+    background-color: #1f53c5;
+    color:white;
     border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
 }
 
-
-#registrar {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
-#registrar:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
 }
 
-#regresar {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
+.input-group input:focus{
+    outline:0;
 }
 
-#regresar:hover {
-    text-decoration: underline;
-    cursor: pointer; 
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
 }
 
+.input-group.success input{
+    border-color: #0cc477;
+}
 
-
-
-
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}
