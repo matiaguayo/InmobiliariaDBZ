@@ -1,5 +1,8 @@
-/* DASHBOARD.PHP */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-image: url(../img/Background/light.jpg);
@@ -8,7 +11,6 @@ body {
     background-attachment: fixed;
     
 }
-
 
 #sesion {
     margin-top: 10px;
@@ -24,7 +26,6 @@ body {
     border: 1px solid rgba(255,255,255,.6);
 }
 
-
 .cerrarsesion {
     text-decoration: none;
     color: #fff;
@@ -36,52 +37,6 @@ body {
     color: chocolate;
 }
 
-.textcaja {
-    color: darkblue;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.textcaja:hover {
-    text-decoration: underline;
-    color: chocolate;
-}
-
-.menu {
-    width: 850px;
-    margin: auto;
-    padding: auto;
-    
-}
-
-.caja {
-    width: 117px;
-    height: 150px;
-    margin: auto;
-    border: 1px solid slategray;
-    text-align: center;
-    background-color: rgb(255,255,233);
-    
-
-    border-radius: 8px 8px 8px 8px;
-    -moz-border-radius: 8px 8px 8px 8px;
-    -webkit-border-radius: 8px 8px 8px 8px;
-    border: 2px solid #9199a3;
-
-    margin: auto;
-    padding-top: 20px; 
-
-}
-
-.separar {
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: auto;
-    
-}
-
-
 .frm {
     width: 80%;
     padding: auto;
@@ -91,18 +46,13 @@ body {
     
 } 
 
-.card {
+.fondo {
     position: relative;
     color: #fff;
     background: rgba(0,0,0,.5);
     border-radius: 10px;
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255,255,255,.6);
-}
-
-
-.textaling {
-    text-align: center;
 }
 
 .space {
@@ -115,12 +65,14 @@ body {
     font-size: 18px; 
 }
 
+.textaling {
+    text-align: center;
+}
+
 .boton{
 	border-radius: 6px;
 	font-weight: bold;
-	max-width: 320px;
-	height: 65px;
-	margin-bottom: 80px;
+	height: 55px;
 	overflow: hidden;
 	color:rgba(255,255,255,1);
 	cursor: pointer;
@@ -168,7 +120,27 @@ body {
 
 .boton:hover:before{
 	left: 330%;
+} 
+
+
+.card-header .textaling {
+    position: relative;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,.6);
 }
+
+/* .table {
+    width: 100%;
+    padding: auto;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+} */
+
+
 
 .card-footer  h4 {
     text-align: left;
@@ -177,4 +149,3 @@ body {
     color: darkorange;
     text-decoration: none;
 }
-

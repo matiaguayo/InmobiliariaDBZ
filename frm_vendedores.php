@@ -35,39 +35,40 @@ if (isset($_SESSION['usu'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>dashboard</title>
         <link rel="stylesheet" href="css/Bootstrap.style.css">
-        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/frm_vendedores.css">
     </head>
 
     <body>
-        <div id="sesion">
-            <div class="card sesion">
-                <div class="card-header sesion">
+        <div clas="sesion">
+            <div class="card" id="sesion">
+                <div class="card-header">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
                         <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5" />
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
                     </svg>
                     Bienvenido Usuario
                 </div>
-                <div class="card-body sesion">Usuario: <?php echo $_SESSION['usu']; ?> <br> <b> <?php echo $tipo; ?></br></div>
+                <div class="card-body">Usuario: <?php echo $_SESSION['usu']; ?> <br> <b> <?php echo $tipo; ?></br></div>
 
-                <div class="card-footer sesion"><a href="cerrar.php" class="cerrarsesion">
+                <div class="card-footer"><a href="cerrar.php" class="cerrarsesion">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
                             <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
-                        </svg>
+                            </svg>
 
-                        Cerrar Sesión</a></div>
+                        Cerrar Sesión</a>  &nbsp; &nbsp; <a href="dashboard.php" class="cerrarsesion" ><img src="img/icons/VolverAtras.png" width="18px"> Volver Atras</a>
+                    </div>
             </div>
         </div>
         <br> 
         <br>
         <div class="menu frm">
             <div class="card">
-                <div class="card-header text-bg-primary text-center ">
+                <div class="card-header text-center">
                     <h4>Administrador de Vendedores</h4>
                 </div>
                 <div class="card-body col-auto">
-                    <form action="crud_usuarios.php" method="post" name="frm_usu">
+                    <form action="crud_vendedores.php" method="post" name="frm_usu">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-6">
@@ -149,9 +150,9 @@ if (isset($_SESSION['usu'])) {
                     <h5>Listados de Vendedores</h5>
                 </div>
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <table class="table table-dark table-bordered">
                         <thead>
-                            <tr class="textaling">
+                            <tr>
                                 <th>ID</th>
                                 <th>Rut</th>
                                 <th>Nombre</th>
@@ -160,6 +161,7 @@ if (isset($_SESSION['usu'])) {
                                 <th>Sexo</th>
                                 <th>Mail Usuario</th>
                                 <th>Estado</th>
+                                <th>Tipo de Usuario</th>
                                 <th>Accion</th>
 
                             </tr>
@@ -171,7 +173,7 @@ if (isset($_SESSION['usu'])) {
                         $con = mysqli_num_rows($result);
 
                         ?>
-                        <tbody>
+                        <tbody class="textaling">
                             <!-- CREAMOS UN CICLO PARA TRAER LOS DATOS -->
                             <?php
                             $cont = 1;
@@ -196,7 +198,7 @@ if (isset($_SESSION['usu'])) {
                                         <?php
                                         } else {
                                         ?>
-                                            <a href="crud_usuarios.php?id=<?php echo $datos['id']; ?>&estado=<?php echo $datos['estado']; ?>"><img src="img/icons/x.png" alt=""></a>
+                                            <a href="crud_vendedores.php?id=<?php echo $datos['id']; ?>&estado=<?php echo $datos['estado']; ?>"><img src="img/icons/x.png" alt=""></a>
                                         <?php
                                         }
 
@@ -211,10 +213,10 @@ if (isset($_SESSION['usu'])) {
                                         if($_SESSION['tipo']!=$datos['id_tipo'])
                                         {
                                             ?>
-                                        <a href="frm_usuarios.php?id=<?php echo $datos['id']; ?>"><img src="img/icons/reload.png" alt="" width="25px"></a> &nbsp; &nbsp; <?php if ($datos['estado'] == 1) { ?>| &nbsp; &nbsp;
+                                        <a href="frm_vendedores.php?id=<?php echo $datos['id']; ?>"><img src="img/icons/reload.png" alt="" width="25px"></a> &nbsp; &nbsp; <?php if ($datos['estado'] == 1) { ?>| &nbsp; &nbsp;
 
                                         <!-- Mandamos datos por href -->
-                                        <a href="crud_usuarios.php?id=<?php echo $datos['id'];?>&estado=<?php echo $datos['estado'];?>">
+                                        <a href="crud_vendedores.php?id=<?php echo $datos['id'];?>&estado=<?php echo $datos['estado'];?>">
                                             <img src="img/icons/eliminar.png" alt="" width="25px">
                                         </a><?php } ?>
                                         <?php

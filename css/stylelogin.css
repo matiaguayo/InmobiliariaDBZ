@@ -3,15 +3,12 @@
 
 body {
     align-items: center;
-    /* justify-content: flex-end;
-    background-attachment: fixed;
-    justify-content: center; */
     padding: 100px 0;
     margin: 100px 0; 
     background: url(../img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    padding-top: 10px;
+    padding-top: 80px;
 
 }
 
